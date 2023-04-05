@@ -1,0 +1,58 @@
+
+// Розробіть кальулятор, використовуючи prompt() та змінні. Розробіть программу, яка виконує наступне:
+// 1. Запитує користувача про перший номер
+// 2. Зберігає цей номер
+// 3. Запитує користувача про другий номер
+// 4. Зберігає другий номер та дає відповідь з сумою двох чисел за допомогою alert()
+
+// Додатково: Зробіть програму, яка може ділити, множити, та віднімати ці два номери
+
+
+
+let firstNum = prompt("Введите первое число:");
+let secondNum = prompt("Введите второе число:");
+let calculate = prompt(
+  'Введите действие "Прибавить", "Отнять", "Делить", "Умножить"');
+switch (calculate) {
+  case "Прибавить":
+    sum(firstNum, secondNum);
+    break;
+  case "Отнять":
+    subtraction(firstNum, secondNum);
+    break;
+  case "Делить":
+    division(firstNum, secondNum);
+    break;
+  case "Умножить":
+    multiply(firstNum, secondNum);
+    break;
+  default:
+    "Действие не задано, выходим";
+}
+function sum(num1, num2) {
+  alert(
+    "Результат " + num1 + " + " + num2 + " = " + (Number(num1) + Number(num2))
+  );
+}
+function subtraction(num1, num2) {
+  alert(
+    "Результат " + num1 + " - " + num2 + " = " + (Number(num1) - Number(num2))
+  );
+}
+function multiply(num1, num2) {
+  alert(
+    "Результат " + num1 + " * " + num2 + " = " + Number(num1) * Number(num2)
+  );
+}
+function division(num1, num2) {
+  try {
+    if (num2 == 0) {
+      throw new ArithmeticException();
+    }
+    alert(
+      "Результат " + num1 + " / " + num2 + " = " + Number(num1) / Number(num2)
+    );
+  } catch (ex) {
+    alert("На 0 делить не стоит!");
+  }
+}
