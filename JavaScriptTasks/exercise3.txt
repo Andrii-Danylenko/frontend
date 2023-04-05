@@ -11,8 +11,7 @@
 
 let firstNum = prompt("Введите первое число:");
 let secondNum = prompt("Введите второе число:");
-let calculate = prompt(
-  'Введите действие "Прибавить", "Отнять", "Делить", "Умножить"');
+let calculate = prompt('Введите действие "Прибавить", "Отнять", "Делить", "Умножить"');
 switch (calculate) {
   case "Прибавить":
     sum(firstNum, secondNum);
