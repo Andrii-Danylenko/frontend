@@ -9,38 +9,38 @@
 
 
 
-let firstNum = prompt("Введите первое число:");
-let secondNum = prompt("Введите второе число:");
-let calculate = prompt('Введите действие "Прибавить", "Отнять", "Делить", "Умножить"');
+let firstNum = prompt("Enter first number:");
+let secondNum = prompt("Enter second number:");
+let calculate = prompt('Enter an operation "addition", "subtraction", "multiplication", "division"');
 switch (calculate) {
-  case "Прибавить":
+  case "addition":
     sum(firstNum, secondNum);
     break;
-  case "Отнять":
+  case "subtraction":
     subtraction(firstNum, secondNum);
     break;
-  case "Делить":
+  case "division":
     division(firstNum, secondNum);
     break;
-  case "Умножить":
+  case "multiplication":
     multiply(firstNum, secondNum);
     break;
   default:
-    "Действие не задано, выходим";
+    "Unknown operation.";
 }
 function sum(num1, num2) {
   alert(
-    "Результат " + num1 + " + " + num2 + " = " + (Number(num1) + Number(num2))
+    "Result " + num1 + " + " + num2 + " = " + (Number(num1) + Number(num2))
   );
 }
 function subtraction(num1, num2) {
   alert(
-    "Результат " + num1 + " - " + num2 + " = " + (Number(num1) - Number(num2))
+    "Result " + num1 + " - " + num2 + " = " + (Number(num1) - Number(num2))
   );
 }
 function multiply(num1, num2) {
   alert(
-    "Результат " + num1 + " * " + num2 + " = " + Number(num1) * Number(num2)
+    "Result " + num1 + " * " + num2 + " = " + Number(num1) * Number(num2)
   );
 }
 function division(num1, num2) {
@@ -49,9 +49,9 @@ function division(num1, num2) {
       throw new ArithmeticException();
     }
     alert(
-      "Результат " + num1 + " / " + num2 + " = " + Number(num1) / Number(num2)
+      "Result of " + num1 + " / " + num2 + " = " + Number(num1) / Number(num2)
     );
   } catch (ex) {
-    alert("На 0 делить не стоит!");
+    alert("Division by 0 isn't recommended!");
   }
 }
