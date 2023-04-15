@@ -1,0 +1,29 @@
+
+// Спробуйте відгадати які відповіді ви отримаєте, якщо запустите це в
+// Console у Google Chrome. Як тільки ви отримаєте відповідь на запитання
+// перевірити їх, скопіювавши їх і запустивши в консолі, рядок за рядком
+
+
+//Розв'яжіть усі вирази наведені нижче:
+
+// додайте змінну "firstName" та "lastName"
+//таким чином, щоб вийшло Ваше повне ім'я
+
+let firstName = "Andriy";
+let lastName = "Danylenko";
+console.log(firstName + " " + lastName);
+
+// створіть змінну, у якій збергіається відповідь (повне ім'я)
+// для "firstName" + " " + "lastName"
+let firstName = "Andriy";
+let lastName = "Danylenko";
+let fullName = firstName + " " + lastName;
+
+// Розв'яжіть завдання. Скільки буде a + b?
+var a = 34;
+var b = 21;
+a = 2;
+a + b // Відповідь a + b = 23
+
+// Чому дорівнює c?
+var c; // undefined
