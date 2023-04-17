@@ -323,5 +323,37 @@ ul {
  .icons{
     margin: 0 80px;
  }
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+    .details {
+        width: 100%;
+    }
+    .btn {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .btn1 {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .btx {
+        flex-direction: column;
+        margin: 50px 0 20px;
+    }
+    .text {
+        margin: 50px 0 0;
+    }
+    .text p {
+        width: 100%;
+    }
+    .q, .s, .c, .l, .t {
+        width: 100%;
+    }
+    .btn3 {
+        margin: 50px 0;
+    }
+}
 
 
