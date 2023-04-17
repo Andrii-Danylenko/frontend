@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.google.com/specimen/Courier+Prime?query=Courier" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>My input practice</title>
+</head>
+<body>
+<label for="input-field">Enter color any color name and enjoy the power of JS</label>
+<input type="text" id="input-field">
+<button onclick="inputListener()">See the magic</button>
+<script>
+    function inputListener() {
+        const input = document.getElementById("input-field").value;
+        switch (input.trim().toLowerCase()) {
+            case (""): alert("IllegalArgumentException: input can't be empty!"); break;
+            case ("red"): document.body.style.backgroundColor = "#ff0000"; break;
+            case ("orange"): document.body.style.backgroundColor = "#ffa500"; break;
+            case ("yellow"): document.body.style.backgroundColor = "#ffff00"; break;
+            case ("green"): document.body.style.backgroundColor = "#008000"; break;
+            case ("blue"): document.body.style.backgroundColor = "#0000ff"; break;
+            case ("purple"): document.body.style.backgroundColor = "#800080"; break;
+            case ("pink"): document.body.style.backgroundColor = "#ffc0cb"; break;
+            case ("white"): document.body.style.backgroundColor = "#ffffff"; break
+            case ("back"): document.body.style.backgroundColor = "#ffffff"; break
+            case ("return"): document.body.style.backgroundColor = "#ffffff"; break
+            default: alert("This color is not yet implemented!"); break;
+        }
+    }
+</script>
+</body>
