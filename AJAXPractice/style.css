@@ -1,0 +1,30 @@
+.myGallery {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
